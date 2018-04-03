@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('./assets/uikit.min.css');
+@import url('./assets/uikit-rtl.min.css');
+
+h3 {
+	text-transform: uppercase;
+}

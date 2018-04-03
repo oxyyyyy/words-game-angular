@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { SidebarPlayersPanelComponent } from './sidebar-players-panel/sidebar-players-panel.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidebarPlayersPanelComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,22 @@
+<h3>team 1:</h3>
+<ul>
+  <li 
+  *ngFor="let player of team1Players" 
+  [ngClass]="{
+    'presenter': player.isPresenter === true,
+    'creator': player.isCreator === true
+  }">
+    {{ player.nickname }} isPresenter? {{ player.isPresenter }} isCreator? {{ player.isCreator }}
+  </li>
+</ul>
+<h3>team 2:</h3>
+<ul>
+  <li 
+  *ngFor="let player of team2Players" 
+  [ngClass]="{
+    'presenter': player.isPresenter === true,
+    'creator': player.isCreator === true
+  }">
+    {{ player.nickname }} isPresenter? {{ player.isPresenter }} isCreator? {{ player.isCreator }}
+  </li>
+</ul>
