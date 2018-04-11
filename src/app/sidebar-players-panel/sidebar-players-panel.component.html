@@ -1,22 +1,28 @@
-<h3>team 1:</h3>
-<ul>
-  <li 
-  *ngFor="let player of team1Players" 
-  [ngClass]="{
-    'presenter': player.isPresenter === true,
-    'creator': player.isCreator === true
-  }">
-    {{ player.nickname }} isPresenter? {{ player.isPresenter }} isCreator? {{ player.isCreator }}
-  </li>
-</ul>
-<h3>team 2:</h3>
-<ul>
-  <li 
-  *ngFor="let player of team2Players" 
-  [ngClass]="{
-    'presenter': player.isPresenter === true,
-    'creator': player.isCreator === true
-  }">
-    {{ player.nickname }} isPresenter? {{ player.isPresenter }} isCreator? {{ player.isCreator }}
-  </li>
-</ul>
+<div class="SidebarPlayersPanelComponent">
+  <h3>team 1:</h3>
+  <ul class="uk-list uk-list-divider">
+    <li 
+    *ngFor="let player of team1Players" 
+    [ngClass]="{
+      'presenter': player.isPresenter,
+      'creator': player.isCreator
+    }">
+      {{ player.nickname }} isPresenter? {{ player.isPresenter }} isCreator? {{ player.isCreator }}
+      <i class="fas fa-chess-queen" *ngIf="player.isPresenter"></i>
+      <i class="fas fa-star" *ngIf="player.isCreator"></i>
+    </li>
+  </ul>
+  <h3>team 2:</h3>
+  <ul class="uk-list uk-list-divider">
+    <li 
+    *ngFor="let player of team2Players" 
+    [ngClass]="{
+      'presenter': player.isPresenter === true,
+      'creator': player.isCreator === true
+    }">
+      {{ player.nickname }} isPresenter? {{ player.isPresenter }} isCreator? {{ player.isCreator }}
+      <i class="fas fa-chess-queen" *ngIf="player.isPresenter"></i>
+      <i class="fas fa-star" *ngIf="player.isCreator"></i>
+    </li>
+  </ul>
+</div>

@@ -1,6 +1,12 @@
-.presenter {
+/* .presenter {
 	background-color: blue;
 }
 .creator {
 	background-color: red;
+} */
+
+.SidebarPlayersPanelComponent {
+	margin: 5px;
+	padding: 5px;
+	border: solid 1px #333;
 }
