@@ -1,6 +1,6 @@
-<div class="SidebarPlayersPanelComponent">
+<div class="SidebarPlayersPanelComponent uk-card uk-card-default uk-card-body">
   <h3>team 1:</h3>
-  <ul class="uk-list uk-list-divider">
+  <ul class="SidebarPlayersPanelComponent__list uk-list uk-list-divider">
     <li 
     *ngFor="let player of team1Players" 
     [ngClass]="{
@@ -13,7 +13,7 @@
     </li>
   </ul>
   <h3>team 2:</h3>
-  <ul class="uk-list uk-list-divider">
+  <ul class="SidebarPlayersPanelComponent__list uk-list uk-list-divider">
     <li 
     *ngFor="let player of team2Players" 
     [ngClass]="{

@@ -15,7 +15,7 @@ export class SidebarPlayersPanelComponent implements OnInit {
   team1Players = team1Players;
   team2Players = team2Players;
 
-  // constructor(private route: ActivatedRoute) { 
+  // constructor(private route: ActivatedRoute) {
   //   this.route.params.subscribe(res => console.log(res.id))
   //  }
 

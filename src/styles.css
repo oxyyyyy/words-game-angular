@@ -4,5 +4,14 @@
 @import url('./assets/uikit-rtl.min.css');
 
 h3 {
-	text-transform: uppercase;
+	text-transform: capitalize;
+}
+.fa-chess-queen {
+	color: orange;
+}
+.fa-star {
+	color: yellow;
+}
+.SidebarPlayersPanelComponent__list {
+	text-transform: capitalize;
 }
